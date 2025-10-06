@@ -202,12 +202,13 @@ function vaciarPila(){
     salida: mostrar un mensaje que se a vaciado*/
     let vaciarP=0;
     convertirPilaLibros()
+    let t=pila.length
     for(let c=pila.length;0<c;c--){
-        if(c>0){
-            vaciarP=pila.pop()
-        }else{
+        vaciarP=pila.pop()
+        t--
+    }
+        if(t===0){
         console.log(`La pila se ha vaciado completamente`)
-        }
     }
 }
     debugger
